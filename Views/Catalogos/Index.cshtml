@@ -1,0 +1,48 @@
+@model IEnumerable<HarryPotter.Models.Food>
+@{
+    ViewData["Title"] = "Postres";
+}
+
+<div class="container">
+    <div class=row>
+        <div class="col-12 d-flex justify-content-center mt-3">
+            <h2 class="titulo">Categorias del Menu</h2>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+            <div class="titulo-divisor"></div>>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-4">
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="/imagenes/contenido/foodscollage.jpg" >
+                    <div class="card-body">
+                        <h5 class="card-title">Foods</h5>
+                   </div>
+                <div class="card-body">
+                    <button class="boton-nice"><a asp-controller="Food" asp-action="Index" asp-route-id="">ver Opciones para Foods</a></button>
+                </div> 
+            </div>
+
+        </div>
+
+
+        <div class="col-sm-12 col-md-4">
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="/imagenes/contenido/categories.jpg" >
+                    <div class="card-body">
+                        <h5 class="card-title">Categorias</h5>
+                   </div>
+                <div class="card-body">
+                    <button class="boton-nice"><a asp-controller="Categories" asp-action="Index" asp-route-id="">Ver opciones para categorias</a></button>
+                </div> 
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Harry Potter Experience</h1>
+    <p>Donde la magia es tan real como en nuestros sueños</p>
+</div>
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carousel" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carousel" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carousel" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/imagenes/contenido/place1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/imagenes/contenido/place2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/imagenes/contenido/place3.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carousel" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    
+  </a>
+  <a class="carousel-control-next" href="#carousel" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+  </a>
+</div>
+<div class="container">
+    <div class=row>
+        <div class="col-12 d-flex justify-content-center mt-3">
+            <h2 class="titulo">Categorias del Menu</h2>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+            <div class="titulo-divisor"></div>>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-4">
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="/imagenes/contenido/birthdayCake.jpg" >
+                    <div class="card-body">
+                        <h5 class="card-title">Postres</h5>
+                   </div>
+                <div class="card-body">
+                    <button class="boton-nice"><a asp-controller="Menu" asp-action="Postres" asp-route-id="">Ver Postres</a></button>
+                </div> 
+            </div>
+
+        </div>
+
+
+        <div class="col-sm-12 col-md-4">
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="/imagenes/contenido/FireWhiskey.jpg" >
+                    <div class="card-body">
+                        <h5 class="card-title">Bebidas</h5>
+                   </div>
+                <div class="card-body">
+                    <button class="boton-nice"><a asp-controller="Menu" asp-action="Bebidas" asp-route-id="">Ver Bebidas</a></button>
+                </div> 
+            </div>
+
+        </div>
+
+        <div class="col-sm-12 col-md-4">
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="/imagenes/contenido/shepherdPie.jpg" >
+                    <div class="card-body">
+                        <h5 class="card-title">Comidas</h5>
+                   </div>
+                <div class="card-body">
+                    <button class="boton-nice"><a asp-controller="Menu" asp-action="Comidas" asp-route-id="">Ver Comidas</a></button>
+                </div> 
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
