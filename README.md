@@ -1,2 +1,2 @@
 # ProgramacionVisualExamen3
-El Pdf con las imagenes de las paginas del examen viene en este mismo nivel de carpeta y se llama documentoExamen3.pdf
+El Pdf con las imagenes de las paginas del examen viene en este mismo nivel de carpeta y se llama Examen3Capturas.pdf
